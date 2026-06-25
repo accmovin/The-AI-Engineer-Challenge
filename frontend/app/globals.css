@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-jungle-gradient font-body text-fern-100 antialiased;
+  }
+
+  /* Custom scrollbar for the jungle theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a1f0a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2d5a3d;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4a7c59;
+  }
+}
